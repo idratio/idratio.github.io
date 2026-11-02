@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>thabo.dev</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      min-height: 100vh;
+      background: #111;
+      color: #fff;
+      font-family: Arial, Helvetica, sans-serif;
+      display: flex;
+      align-items: center;      /* vertical centering */
+      justify-content: center;  /* horizontal centering */
+    }
+
+    main {
+      text-align: center;
+    }
+
+    .avatar {
+      width: 156px;
+      height: 156px;
+      border-radius: 50%;       /* makes the image a circle */
+      border: 3px solid #fff;
+      object-fit: cover;        /* crops instead of squishing */
+    }
+
+    h1 {
+      margin-top: 24px;
+      font-size: 2rem;
+    }
+
+    .links {
+      margin-top: 40px;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    .links img {
+      width: 30px;
+      height: 30px;
+      transition: transform 0.2s, opacity 0.2s;
+    }
+
+    .links a:hover img {
+      transform: scale(1.15);
+      opacity: 0.8;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <img class="avatar" src="avatar.png" alt="Thabo's avatar">
+    <h1>thabo.dev</h1>
+
+    <div class="links">
+      <a href="https://twitter.com/YOUR_HANDLE" aria-label="Twitter">
+        <img src="https://cdn.simpleicons.org/x/white" alt="">
+      </a>
+      <a href="https://github.com/YOUR_USERNAME" aria-label="GitHub">
+        <img src="https://cdn.simpleicons.org/github/white" alt="">
+      </a>
+    </div>
+  </main>
+</body>
+</html>
